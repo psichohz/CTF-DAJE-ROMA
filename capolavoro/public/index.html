@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="asset/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>CTF DAJE ROMA</title>
+</head>
+<body>
+    <div class="top">
+        <h1>
+            CTF DAJE ROMA
+        </h1>
+        <div class="t_punti">
+          <h3>punti:</h3></div>
+          <div id="punti_tot" class="v_punti"></div>   
+    </div>
+
+    <div class="corpo">
+        <div>
+            <button class="bottone_trasparente" onclick="prova()">
+                <div id="button_ctf1" class="bottone_ctf1">
+                    <h2>roma is back</h2>
+                    <div class="punti">150</div>                    
+                </div>
+ 
+            </button>
+        </div>
+        <div class="ctf1" id="prova">
+            <h2 style="margin-top: 10px;">roma is back</h2>
+            <h5>
+                abbiamo trovato questo messaggio nei reperti archeologici di Roma. Riesci a decodificarlo?
+            </h5>
+            <p>synt{pnrfne3_1f_lbhe_s4gu3e}</p>
+            <form id="form">
+                <label for="messaggio"></label>
+                <input type="text" id="messaggio" name="messaggio" autocomplete="off" class="casella_testo">
+                <button type="button" id="invio" class="button_form" onclick="controllo_ctf1()"> invia </button>
+            </form>
+            <div id="risultato"></div>
+            <button class="uscita" id="uscita_ctf"><img src="./asset/img_for_exit.png"></button>
+        </div>
+    </div>
+    <script src="code.js"></script>
+</body>
+</html>
